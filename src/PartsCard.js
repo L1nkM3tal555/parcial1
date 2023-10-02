@@ -1,5 +1,5 @@
 import { FormattedMessage } from "react-intl";
-import { Button } from "react-bootstrap";
+
 
 function PartCard(props) {
     
