@@ -4,21 +4,28 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import { IntlProvider } from "react-intl";
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import localeEnMessages from "./locales/en.json";
+import localeEsMessages from "./locales/es.json";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {flatten} from "flat";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const locale = navigator.language;
+
+let lang;
+if (locale === "en") {
+  lang = localeEnMessages;
+} else {
+  lang = localeEsMessages;
+}
+console.log(flatten(lang));
+
 root.render(
-  <React.StrictMode>
-   <Container>
-     <Row xs={1}>
-     <App />
-     </Row>
-   </Container>
- </React.StrictMode>
+  <IntlProvider locale={locale} messages={flatten(lang)}>
+     <App/>
+ </IntlProvider>
 );
 
 // If you want your app to work offline and load faster, you can change

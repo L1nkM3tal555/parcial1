@@ -36,3 +36,159 @@
     transform: rotate(360deg);
   }
 }
+
+/*Parts*/
+
+.part {
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+}
+
+.part-title {
+  display: flex;
+  flex-direction: row;
+  color: #FFFFFF;
+  font-family: "Poppins";
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-top: 62px;
+  margin-left: 62px;
+  justify-content: space-between;
+}
+
+
+.parts-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 62px;
+}
+
+.part-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.part-card-image {
+  height: 200px !important;
+  width: 250px !important;
+  object-fit: fill;
+}
+
+.part-card-info {
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins";
+  justify-content: left;
+  font-weight: 700;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+.part-card-values {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+.part-card-edit-button {
+  background-color: #F5E7D8;
+  border-color: #F5E7D8;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 14px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.part-card-contribute-button {
+  background-color: #F28705;
+  border-color: #F28705;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 14px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.part-create-button {
+  background-color: #F28705;
+  border-color: #F28705;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 14px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.part-create-title {
+  font-family: 'Poppins';
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.part-create-subtitle {
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+.part-create-image {
+  width: 700px;
+  height: auto;
+  object-fit: fill;
+}
+
+.part-card-progressbar {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.part-card-progressbar::-webkit-progress-value {
+  background-color: #F28705;
+  border-radius: 5px;
+}
+
+.part-card-progressbar::-webkit-progress-bar {
+  background-color:  #F5E7D8;
+  border-radius: 5px;
+}
+
+.part-create-form {
+  background-color: #F5E7D8;
+  opacity: 0.9;
+  width: 800px;
+  border-radius: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 28px;
+  margin-left: 42px;
+}
+
+.parts-form-label {
+  color: #534D4D;
+  font-size: 16px;
+  font-family: "Open Sans Hebrew";
+  justify-content: start;
+  align-content: start;
+}

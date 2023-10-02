@@ -1,0 +1,12 @@
+{
+    "common": {
+        "or": "O"
+    },
+    "parts": {
+        "carMaker": "Fabricante del auto: {value}",
+        "carModel": "Modelo del auto: {value}",
+        "carYear": "Año del auto: {value}",
+        "available": "Disponible en linea: {value}",
+        "price": "Precio: {value}"
+    }
+}
